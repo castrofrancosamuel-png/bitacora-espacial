@@ -1,0 +1,35 @@
+@layer componentes {
+  .buscador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacio-2);
+    margin-block: var(--espacio-4);
+
+    & label {
+      flex-basis: 100%;
+      color: var(--color-texto-suave);
+    }
+
+    & input {
+      flex: 1 1 14rem;
+      padding: var(--espacio-2) var(--espacio-3);
+      font: inherit;
+      color: var(--color-texto);
+      background: var(--color-superficie);
+      border: 1px solid var(--color-texto-suave);
+      border-radius: var(--radio-card);
+    }
+
+    & button {
+      padding: var(--espacio-2) var(--espacio-4);
+      font: inherit;
+      font-weight: 700;
+      color: var(--color-fondo);
+      background: var(--color-acento);
+      border: 0;
+      border-radius: var(--radio-card);
+      cursor: pointer;
+    }
+  }
+}
